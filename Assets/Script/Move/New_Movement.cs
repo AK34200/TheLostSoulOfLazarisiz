@@ -150,7 +150,7 @@ public class New_Movement : MonoBehaviour
                 rb.gravityScale = 0.2f;
                 IsGliding = true;
                 canGlide = true;
-                //Player_Animator.SetBool("JUMP", true);
+                Player_Animator.SetBool("JUMP", true);
             }
 
             if (context.canceled && !IsGrounded() && IsGliding)     // Si je suis en chute et que je plane
