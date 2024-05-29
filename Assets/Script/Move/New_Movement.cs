@@ -65,10 +65,12 @@ public class New_Movement : MonoBehaviour
 
     }
 
-    private bool IsGrounded()                                               // ============== JUMP : GROUND DETECTION [NEW]
+    public bool IsGrounded()                                               // ============== JUMP : GROUND DETECTION [NEW]
     {
         canGlide = true;
+        Debug.Log("efsefsdfsdf");
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        
     }
 
 
@@ -122,6 +124,14 @@ public class New_Movement : MonoBehaviour
         if (canJump)
         {
             Debug.Log("ISGrounded = "+IsGrounded());
+            if(!IsGrounded())
+            {
+                Player_Animator.SetBool("JUMP", true);
+            } else
+            {
+                Player_Animator.SetBool("JUMP", false);
+            }
+
             if (context.performed && IsGrounded())  // Si je saute et que je suis au sol
             {
                 rb.velocity = new Vector2(rb.velocity.x, power_JP);
@@ -140,18 +150,18 @@ public class New_Movement : MonoBehaviour
                 rb.gravityScale = 0.2f;
                 IsGliding = true;
                 canGlide = true;
-                Player_Animator.SetBool("JUMP", false);
+                //Player_Animator.SetBool("JUMP", true);
             }
 
-            if (context.canceled && !IsGrounded() && IsGliding && !canGlide)     // Si je suis en chute et que je plane
+            if (context.canceled && !IsGrounded() && IsGliding)     // Si je suis en chute et que je plane
             {
                 rb.gravityScale = 1f;
                 IsGliding = false;
                 canGlide = false;
-                Player_Animator.SetBool("JUMP", true);
+                Player_Animator.SetBool("JUMP", false);
                 if (IsGrounded())
                 {
-                    rb.gravityScale = 1f;
+                    //rb.gravityScale = 1f;
                     canGlide = true;
                     IsGliding = false;
                 }
@@ -162,6 +172,8 @@ public class New_Movement : MonoBehaviour
                 canGlide = true;
                 IsGliding = false;
             }
+
+
         }
     }
 }

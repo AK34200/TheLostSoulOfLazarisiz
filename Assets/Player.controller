@@ -11,6 +11,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: RUN
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: JUMP
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5439292881230003463}
   m_Solo: 0
@@ -120,6 +123,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: RUN
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: JUMP
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4817271804286232947}
   m_Solo: 0
@@ -145,6 +151,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: JUMP
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: RUN
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5439292881230003463}
   m_Solo: 0
@@ -155,7 +164,7 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 1
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -210,8 +219,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: JUMP
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: IDLE
+  - m_ConditionMode: 2
+    m_ConditionEvent: RUN
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4817271804286232947}
@@ -223,7 +232,7 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 1
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -238,6 +247,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: JUMP
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: RUN
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3904346265646228972}
   m_Solo: 0
@@ -248,7 +260,7 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0.73214287
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -264,7 +276,7 @@ AnimatorStateTransition:
     m_ConditionEvent: JUMP
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: IDLE
+    m_ConditionEvent: RUN
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3904346265646228972}
@@ -276,7 +288,7 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -294,7 +306,7 @@ AnimatorStateMachine:
     m_Position: {x: 200, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5439292881230003463}
-    m_Position: {x: 410, y: 80, z: 0}
+    m_Position: {x: 460, y: 70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3904346265646228972}
     m_Position: {x: 460, y: -40, z: 0}
