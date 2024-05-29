@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed93ee7678a34240b3f69de484fc6ea, type: 3}
+  m_Name: Test conversation
+  m_EditorClassIdentifier: 
+  speakerName: Binelb
+  paragraphs:
+  - Bonjour, Hoodsoul.
+  - Je suis Binelb le clairvoyant.
+  - Je vois que tu reviens vers tes origines ainsi que pour le coeur de cristal.
+  - "Si tu cherches le coeur il est gard\xE9 par le gardien et si tu cherches des
+    r\xE9ponses sur toi, tu les trouveras dans la cit\xE9."
+  - Mais avant sache que pour sauter appuie sur la touche A.
+  - "Et si tu souhaites planer appuies sur la touche A enfoncer apr\xE8s avoir sauter."
+  - "Bonne chance pour ton p\xE9riple."
