@@ -80,9 +80,9 @@ public class New_Movement : MonoBehaviour
         {
             rb.gravityScale = DataGravityScale * 1.5f;
 
-            if (rb.velocity.y < -25)
+            if (rb.velocity.y < -65)
             {
-                rb.velocity = new Vector2(rb.velocity.x, -25);
+                rb.velocity = new Vector2(rb.velocity.x, -65);
             }
         }
     }
@@ -175,5 +175,9 @@ public class New_Movement : MonoBehaviour
 
 
         }
+    }
+    public void Run()
+    {
+        Player_Animator.SetBool("RUN", true);
     }
 }

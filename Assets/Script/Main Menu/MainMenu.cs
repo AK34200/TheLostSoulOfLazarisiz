@@ -12,6 +12,12 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Game closed");
 
     }
+
+    public void Start()
+    {
+        Screen.SetResolution(1920, 1080, true);
+    }
+
     public void ChangeScene(string _sceneName)
     {
         SceneManager.LoadScene(_sceneName);
